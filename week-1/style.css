@@ -1,0 +1,187 @@
+*{margin:0;
+    padding:0;}
+    
+    body {
+      background-color:#a3c2c2;
+    }
+
+    #header {
+      background-color: #a3c2c2;
+      padding:50px 30px ;
+      font-size:40px;
+      text-align:center;
+    }
+    h1 {
+      color: #00091;
+      font-family:impact;
+    }
+
+    #one {
+      background-color:#5c8a8a;
+      font-size:25px;
+      width:100%;
+      display:table;
+    }
+    h2 {
+      color:#00091 ; 
+      font-family:impact;
+      text-align: center;
+    }
+    .tirsa {
+      background-color:#5c8a8a;
+      padding-left:2%;
+      width:48%;
+      display:table-cell;
+      float:left;
+    }
+    .sweden {
+      background-color:#5c8a8a;
+      padding-right:2%;
+      width:48%;
+      display:table-cell;
+      float:left;
+    }
+    .sweden .info {
+      text-align:right;
+    }
+
+    #me {
+      background-color: #a3c2c2;
+      display:table;
+    }
+
+    #who1 {
+      float:left;
+      margin:2%;
+      display:table-cell 
+    }
+
+    #who {
+      background-color:#5c8a8a ;
+      width:50%;
+      float:left;
+      margin:2%;
+      padding:2%;
+      border-style: solid; 
+      border-width: 10 px; 
+      border-color:black;
+      border-radius:20px;
+      display:table-cell;
+    }
+
+    #who h2 {
+      font-size: 30px;
+      text-align: center;
+       margin:1%;
+    }
+    #who p {
+      font-size:23px;
+      text-align:center;
+      margin-top:20px;
+    }
+
+    #education {
+      background-color:#5c8a8a;
+      font-size:23px;
+      padding: 10px 0px 10px 45px;
+      clear:left;
+    }
+    #ed { 
+      font-family:impact;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    #we {
+      background-color:#a3c2c2;
+      font-size:23px;
+      padding:20px 20px 40px 50px;
+      clear:left;
+    }
+    #work {
+      color:#00091; 
+      font-family:impact;
+      font-size:30px;
+      text-align: center;
+      padding:0px 10px 20px 0px;
+    } 
+    h4 {
+      color: #00091;
+      font-size:25px;
+      font-family:impact;
+    }
+    .purple {
+      color:#1d3030;
+    }
+    .lr {
+      font-family:times; 
+      font-size:28px;
+    }
+   
+    #box {
+      background-color:#5c8a8a;
+      display:table;
+    }
+    #learn { 
+      background-color:#a3c2c2;
+      margin:10px;
+      padding:40px 40px 10px 60px;
+      float:left;
+      width:40%;
+      font-size:20px;
+      border-radius:20px;
+      display:table-cell
+    }
+    #res {
+      background-color:#a3c2c2;
+      margin:10px;
+      padding:40px 40px 10px 60px;
+      float:left;
+      width:40%;
+      font-size:20px; 
+      border-radius:20px;
+      display:table-cell;
+    }
+    
+    #hack {
+      background-color:#a3c2c2;
+      font-size:20px;
+      padding:50px 100px 50px 50px;
+    }
+    a:link, a:visited {
+      text-decoration: none;
+      color:#212F3D;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  
+
+
+<!---Media Queries -->
+
+
+
+@media only screen and (min-width:450px)
+{
+  #header h1 {width:100%;}
+
+  #one {width:100%;}
+   
+  #me {width:100%;}
+
+  #who {width:100%;}
+
+  #education {width:100%;}
+    
+  #we {width:100%;}
+   
+  #box {width:100%;}
+    
+  #learn { width:100%;}
+   
+  #res {width:100%;}
+    
+  #hack {width:100%;}
+
+}
