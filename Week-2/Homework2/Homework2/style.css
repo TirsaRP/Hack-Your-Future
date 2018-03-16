@@ -1,13 +1,16 @@
-body{;
+body {
+    background-color:#bdb7b7;
+    font-family: "Gill Sans", sans-serif;
 }
+
 header{
     border:solid;
+    background-color:#fdfdfd;
 }
+
 h1{
     text-align:center;
     font-size:50px;
-}
-section {;
 }
 
 h2{
@@ -15,51 +18,51 @@ h2{
     border:solid;
     text-align:center;
     font-size:35px;
-
+    background-color:#fdfdfd;
 }
 
 #grid-floats {
   box-sizing:border-box;
-
-
 }
+
 .grid-item {
     float:left;
     width:45%;
+    height:400px;
     margin:5px;
     border:solid 1px; 
-    border-color:black;
     list-style: none;
+    background-color:#fdfdfd;
 }
 
-#grid-floats .grid-item:first-child {
-    width:94%;}
+#grid-floats .grid-item:nth-of-type(1) {
+    width:93%;
 }
 
-h3
-img
-p
+h3 {
+    color:coral;
+}
 
 
 #grid-flex{ 
     display:flex;
-    flex-wrap:wrap;
-    
+   flex-direction:row;
+   flex-wrap:wrap;
 }
 
 #grid-flex .grid-item{
     border:solid 1px; 
     border-color:black;  
-    width:45%;
-    margin:5px; 
-    list-style: none;
+   height:400px;
 }
 
-img{width:150px;
+img{
+    height:100px
 }
 
 #grid-flex .grid-item:first-child {
-    width:94%;}
+width:93%
+}
 
 
 @media screen and (min-width:750px){
@@ -72,21 +75,30 @@ img{width:150px;
     #grid-floats {
         width:90%;
     }
-    .grid-item{
-        width:28%;
+    #grid-floats .grid-item{
+        width:29.5%;
     }
-    .grid-item:first-child {
+    #grid-floats .grid-item:nth-of-type(1) {
         width:45%;
     }
-    .grid-item:second-child {
+    #grid-floats .grid-item:nth-of-type(2){
         width:45%;
     }
     #grid-flex{
         width:90%;
     }
-        
+    #grid-flex .grid-item {
+        width:28%;
+    }
+    #grid-flex .grid-item:nth-child(1) {
+        width:43%;
+    }
+    #grid-flex .grid-item:nth-child(2) {
+        width:43%;
+    }     
 }
     
+
 @media screen and (min-width:950px){
     header{
         width:95%;
@@ -100,26 +112,26 @@ img{width:150px;
    #grid-floats .grid-item{
         width:22.5%;
     }
-    #grid-floats .grid-item:first-child {
-        width:35%;
+    #grid-floats .grid-item:nth-of-type(1) {
+        width:46%;
     }
-    #grid-floats .grid-item:second-child {
-        width:35%;
+    #grid-floats .grid-item:nth-of-type(2) {
+        width:22.5%;
     }
     #grid-flex{
         width:95%;
-    #grid-floats .grid-item{
+    }
+    #grid-flex .grid-item{
         width:22.5%;
     }
-    #grid-flex .grid-item:first-child {
-        width:35%;
+    #grid-flex .grid-item:nth-child(1) {
+        width:46%;
     }
-    #grid-flex .grid-item:second-child {
-        width:35%;
+    #grid-flex .grid-item:nth-of-type(2) {
+        width:22.5%;
     }
     img {
-        width:60%;}
+        width:60%;
     }
-        
 }
     
