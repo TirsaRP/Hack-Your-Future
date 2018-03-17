@@ -28,7 +28,7 @@ h2{
 .grid-item {
     float:left;
     width:45%;
-    height:400px;
+    min-height:400px;
     margin:5px;
     border:solid 1px; 
     list-style: none;
@@ -46,14 +46,14 @@ h3 {
 
 #grid-flex{ 
     display:flex;
-   flex-direction:row;
-   flex-wrap:wrap;
+    flex-direction:row;
+    flex-wrap:wrap;
 }
 
 #grid-flex .grid-item{
     border:solid 1px; 
     border-color:black;  
-   height:400px;
+    min-height:400px;
 }
 
 img{
@@ -61,7 +61,7 @@ img{
 }
 
 #grid-flex .grid-item:first-child {
-width:93%
+    width:93%
 }
 
 
