@@ -134,5 +134,9 @@ img{
         width:60%;
         height:auto;
     }
+     #grid-floats .grid-item:nth-of-type(4) {
+        clear:left;
+    }
+    
 }
     
