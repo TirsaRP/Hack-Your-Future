@@ -152,18 +152,11 @@ img{
     }
     img {
         width:60%;
+        height:auto;
     }
-    #grid-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     #grid-floats .grid-item:nth-of-type(4) {
+        clear:left;
     }
-  
-    #grid-grid .grid-item:nth-child(1) {
-        grid-column-end: span 4;
-    }
-   
-    #grid-grid .grid-item: {
-        grid-column-end: span 2;
-    }
-
+    
 }
     
