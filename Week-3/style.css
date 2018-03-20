@@ -4,50 +4,44 @@ body{
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto 1fr;
-    background-color:#d0d7d8
+    background-color:#d0d7d8;
+    grid-gap:2em 1em;
 }
 
 header{background-color:rgb(12, 11, 11);
     color:rgb(253, 249, 249);
     text-align:center;
     border:solid;
+    font-size:1.1em;
 }
 .display{
     display:none;
 }
 
 .image{
-    width:20em;
+    margin:1em;
     border-radius:50%;
 }
 
 #work{
-    border:solid;
+    
 }
-
-#education{
+.work{
     border:solid;
+    font-size:1.1em;
 }
-
-#skills{
-    border:solid;
-}
-#languages{
-    border:solid;
-}
-#references{
-    border:solid;
-}
-
-#portfolio{
+.ed {
     border:solid;
 }
 .project{
     border:solid;
     text-align:center;
+    margin:10px;
 }
 .blogposts{
     border:solid;
+    margin:10px;
+    padding:5px;
 }
 h2{
     text-align:center;
@@ -56,7 +50,7 @@ h2{
     color:rgb(253, 249, 249);
     padding:60px;
 }
-.nav{display:none;
+#nav{display:none;
 
 }
 a {
@@ -81,13 +75,40 @@ footer{
 
 
 
-@media screen and (min-width:900px){
-    body{ background-color:grey;
+@media screen and (min-width:700px){
+
+    body{
         font-size:20px;
         box-sizing: border-box;
         display:grid;
-        grid-template-columns: auto 1fr 1fr;
-        grid-template-rows: 1fr auto 1fr auto;
+        grid-template-columns: 30% auto auto;
+        grid-template-rows: auto auto auto 1fr auto;
+    }
+    .image{
+        width:85%;
+    }
+    header{
+        grid-area:1/1/6/2;
+    }
+    #nav{grid-area:1/2/1/4 ;
+        height:150px;   
+        background-color:rgb(105, 105, 105);
+        display:block;
+    }
+#nav li{
+   list-style-type: none;
+}
+
+    #work{
+        grid-area:2/2/2/3;
+    }
+
+    .work{
+    align-content:stretch;
+    }
+    
+    #education{
+        grid-area:2/3/2/4;
     }
     h2{
         font-size:25px;
@@ -100,9 +121,10 @@ footer{
         display:none;
     }
 
-    .nav{
-        display:block;
+   img {
+       width:50%;
+   }
+    footer{
+        grid-area:5/2/5/4;
     }
-
-
 }
