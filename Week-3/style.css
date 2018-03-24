@@ -71,6 +71,10 @@ footer{
     text-align:center;
 }
 
+.links a{
+    padding:2%;
+    margin:2%;
+}
 
 
 @media screen and (min-width:700px){
